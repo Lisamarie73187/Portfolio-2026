@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { sql, rowToProject, type ProjectRow } from '../_lib/db';
+import { sql, rowToProject, type ProjectRow } from '../_lib/db.js';
 
 /** GET /api/projects — all projects in display order. */
 export default async function handler(req: VercelRequest, res: VercelResponse) {
