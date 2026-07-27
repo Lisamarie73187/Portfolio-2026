@@ -1,0 +1,43 @@
+{
+  "name": "portfolio-2026",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "vercel dev",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "typecheck:api": "tsc --noEmit -p tsconfig.api.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "db:schema": "node --env-file=.env ./node_modules/.bin/tsx scripts/apply-schema.ts",
+    "seed": "node --env-file=.env ./node_modules/.bin/tsx scripts/seed.ts",
+    "sync": "node --env-file=.env ./node_modules/.bin/tsx scripts/sync.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "framer-motion": "^11.18.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@tailwindcss/vite": "^4.0.6",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vercel/node": "^5.8.26",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "tailwindcss": "^4.0.6",
+    "tsx": "^4.23.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0",
+    "vite": "^6.1.0"
+  }
+}
