@@ -9,6 +9,7 @@ export const projects: Project[] = [
       'Golden Hour is a mobile app for discovering local happy hours and events on a live map. Browse nearby venues, view current and upcoming deals, and filter by time, vibe, and specials. The app is currently in beta testing through TestFlight.',
     year: 2026,
     role: 'Solo Designer & Developer',
+    projectType: 'Personal Project',
     tags: ['React Native', 'TypeScript', 'Supabase'],
     homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Golden+Hour/thumbnailGoldenHour.png',
     coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Golden+Hour/First.png',
@@ -19,25 +20,21 @@ export const projects: Project[] = [
     },
     {
       name: 'Supabase',
-      description: 'Backend-as-a-Service for auth, database, and real-time sync.',
     },
     {
       name: 'React Navigation',
     },
     {
       name: 'Mapbox',
-      description: 'Interactive maps for live venue and event discovery.',
     },
     {
       name: 'Reanimated',
     },
     {
       name: 'Anthropic API',
-      description: 'Claude parses venue websites and menu photos into structured happy-hour data.',
     },
     {
       name: 'Google Places API',
-      description: 'Enriches venue records with hours, photos, and details when a site is unavailable.',
     },
   ],
   features: [
@@ -92,6 +89,7 @@ export const projects: Project[] = [
     'A mental wellness platform with a React Native mobile app, web chat bot, and a Next.js web companion that serves as its backend. Users talk through good and bad days with an AI companion ("AMI"), check in on their mood daily, and keep a private journal, wrapped in a warm, calming, non-judgmental design.',
   year: 2024,
   role: 'Solo Designer & Developer',
+  projectType: 'Personal Project',
   tags: ['React Native', 'React','TypeScript', 'Next.js', 'OpenAI'],
   coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/OpenMindChat/PSMainImage.png',
   gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/OpenMindChat/charsupport.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/OpenMindChat/moodtrackingJournal.png'],
@@ -110,19 +108,15 @@ export const projects: Project[] = [
     },
     {
       name: 'Next.js',
-      description: 'Web companion app (Next.js 15, App Router) that also serves as the backend API for the mobile app.',
     },
     {
       name: 'OpenAI API',
-      description: 'Powers the AI companion "AMI" through the web app\'s chat endpoint.',
     },
     {
       name: 'MongoDB',
-      description: 'Stores users and chat messages via the Next.js API routes.',
     },
     {
       name: 'Firebase Auth',
-      description: 'Handles user authentication for the web platform.',
     },
     {
       name: 'React Query',
@@ -173,10 +167,11 @@ export const projects: Project[] = [
     'A full-stack travel itinerary app for planning multi-day trips: drag-and-drop scheduling, a live Mapbox view with driving routes, shared/collaborative trips, budget splitting, and an AI-powered discovery panel that suggests real places using Google Places data, ranked and explained by an LLM.',
   year: 2026,
   role: 'Solo developer',
+  projectType: 'Personal Project',
   tags: ['React', 'TypeScript', 'Vite', 'Supabase', 'Mapbox', 'AI SDK'],
   homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
   coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
-  gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/wanderlistFeatureOne.png', '/mock/screen-2.svg'],
+  gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/wanderlistFeatureOne.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/WanderlistTwo.png'],
   techStack: [
     {
       name: 'React 19 + TypeScript (strict)',
@@ -189,37 +184,33 @@ export const projects: Project[] = [
     },
     {
       name: 'Mapbox GL JS',
-      description: 'Two independent marker layers (real itinerary pins vs. ephemeral AI-suggestion pins) so suggestions never touch the real itinerary. Driving-route geometry via the Directions API.',
     },
     {
       name: 'Vercel AI SDK + AI Gateway',
-      description: '`generateObject` with a Zod schema constrains the model to return only an ID + a one-sentence reason, never a place\'s name, address, or coordinates. Those always come from the real Google Places response the ID is looked up against, so the model can\'t hallucinate a place into your itinerary.',
     },
     {
       name: 'Google Places API',
-      description: 'Every place, search results, category browsing, and AI suggestions is backed by live data: ratings, hours, photos, and editorial descriptions, fetched server-side to keep the API key private for AI-related calls.',
     },
     {
       name: 'Drag-and-drop via @hello-pangea/dnd',
-      description: 'Reordering places persists optimistically, the UI updates instantly and syncs to Supabase in the background, with order recalculated per day.',
     },
   ],
   features: [
     {
       title: 'AI-Powered Discovery',
-      description: 'An "Explore" panel with AI-generated category cards tailored to your specific destination (best attractions, local favorites, hikes) plus free-text search ("a quiet coffee shop near Day 2"). Categories and preview photos are cached per trip so reopening the panel is instant.',
+      description: 'An "Explore" panel with AI-generated category cards tailored to your specific destination (best attractions, local favorites, hikes) plus free-text search ("a quiet coffee shop near Day 2").',
     },
     {
       title: 'Drag-and-Drop Itinerary',
-      description: 'Reorder places within a day or move them across days, with live driving-time/distance estimates between stops and overnight-hop distances shown between days.',
+      description: 'Reorder places within a day or move them across days, with live driving time/distance estimates between stops and overnight hop distances shown between days.',
     },
     {
       title: 'Live Collaborative Trips',
-      description: 'Invite collaborators by email, shared editing with optimistic updates, per-place comment threads, and a budget-splitting view that settles up who owes whom.',
+      description: 'Invite collaborators by email, shared editing with optimistic updates, per-place comment threads, and a budget splitting view that settles up who owes whom.',
     },
     {
       title: 'Interactive Map',
-      description: 'Day-by-day color-coded pins, toggleable driving-route overlays, and a floating AI-suggestion layer with its own pins that clear independently of your real itinerary.',
+      description: 'Day by day color coded pins, toggleable driving route overlays, and a floating AI suggestion layer with its own pins.',
     },
     {
       title: 'Guest Mode',
@@ -232,5 +223,73 @@ export const projects: Project[] = [
   ],
   liveUrl: 'https://www.wanderlist.dev',
   githubWebUrl: 'https://github.com/Lisamarie73187/Winery-Itinerary-',
+},
+{
+  slug: 'petsmart',
+  title: 'PetSmart',
+  tagline: 'Shipping ecommerce, curbside, and loyalty features to millions of pet parents on PetSmart\'s mobile app.',
+  description:
+    'Cross-platform mobile work on PetSmart\'s consumer app across iOS and Android. Part of a small team building the React Native ecommerce experience — browsing, cart, and checkout — plus ongoing maintenance and testing of the in-store Services app. Delivered curbside and DoorDash integrations during 2020 to support contactless shopping, added Apple Pay checkout, and wired up the Treats loyalty program so points earn and redeem inline.',
+  year: 2018,
+  projectType: 'Work',
+  role: 'Software Engineer 2018-2022',
+  tags: ['React Native', 'React', 'iOS', 'Swift', 'Kotlin', 'Redux'],
+  homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/mobileAppThumbnail.png',
+  coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/mobileAppThumbnail.png',
+  gallery: [
+    'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/PetsmartOneApp.png',
+    'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/petsmartservices.png',
+  ],
+  techStack: [
+    {
+      name: 'React Native',
+    },
+    {
+      name: 'React',
+    },
+    {
+      name: 'iOS (Swift)',
+    },
+    {
+      name: 'Android (Kotlin)',
+    },
+    {
+      name: 'Redux',
+    },
+    {
+      name: 'Native module bridging (Swift / Kotlin)',
+    },
+    {
+      name: 'Apple Pay',
+    },
+  ],
+  features: [
+    {
+      title: 'React Native Ecommerce',
+      description: 'Part of a 3-person team building out the React Native ecommerce surface of the mobile app — product browsing, cart, and checkout flows shared across iOS and Android.',
+    },
+    {
+      title: 'Services App Maintenance & Testing',
+      description: 'Helped maintain the in-store Services app, with thorough testing across flows to keep grooming, vet, and boarding features stable through releases.',
+    },
+    {
+      title: 'Curbside & DoorDash Integration',
+      description: 'Connected the app to DoorDash and other curbside/delivery services during 2020 to enable contactless pickup and keep customers and staff safe.',
+    },
+    {
+      title: 'Apple Pay Checkout',
+      description: 'Integrated Apple Pay for fast, native one-tap checkout on iOS, reducing friction in the purchase flow.',
+    },
+    {
+      title: 'Treats Loyalty Points',
+      description: 'Wired up the Treats rewards program so members earn and redeem points inline during shopping and checkout.',
+    },
+    {
+      title: 'Native Bridging & Shared State',
+      description: 'Bridged React Native to native Swift and Kotlin modules where platform APIs were needed, with Redux managing cart, session, and checkout state across the app.',
+    },
+  ],
+  liveUrl: 'https://www.petsmart.com',
+  githubWebUrl: '',
 }
 ];

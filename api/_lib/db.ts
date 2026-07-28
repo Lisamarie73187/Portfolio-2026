@@ -16,6 +16,7 @@ export interface ProjectRow {
   description: string;
   year: number;
   role: string;
+  project_type: string | null;
   tags: string[];
   cover_image: string;
   home_image: string | null;
@@ -34,6 +35,7 @@ export const rowToProject = (row: ProjectRow): Project => ({
   description: row.description,
   year: row.year,
   role: row.role,
+  projectType: row.project_type ?? undefined,
   tags: row.tags,
   coverImage: row.cover_image,
   homeImage: row.home_image ?? undefined,

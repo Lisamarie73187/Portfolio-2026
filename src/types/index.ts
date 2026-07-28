@@ -19,6 +19,8 @@ export interface Project {
   description: string;
   year: number;
   role: string;
+  /** Optional category label, e.g. "Personal Project", "Client Work". */
+  projectType?: string;
   tags: string[];
   /** Image shown on the gallery card and (by default) the project detail page. */
   coverImage: string;

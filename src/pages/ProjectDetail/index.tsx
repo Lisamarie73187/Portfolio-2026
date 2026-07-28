@@ -42,6 +42,11 @@ export const ProjectDetail = () => {
             {project.title}
           </h1>
           <p className="mt-3 max-w-2xl text-lg text-muted">{project.tagline}</p>
+          {project.projectType && (
+            <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-primary">
+              {project.projectType}
+            </p>
+          )}
           <div className="mt-4 flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <Tag key={tag} label={tag} />

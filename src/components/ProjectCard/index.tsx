@@ -26,6 +26,11 @@ export const ProjectCard = ({ project, featured = false }: ProjectCardProps) => 
     <div className="p-5">
       <h3 className="mb-1 font-display text-lg font-bold text-ink">{project.title}</h3>
       <p className="mb-3 text-sm text-muted">{project.tagline}</p>
+      {project.projectType && (
+        <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-primary">
+          {project.projectType}
+        </p>
+      )}
       <div className="flex flex-wrap gap-2">
         {project.tags.slice(0, featured ? 3 : 4).map((tag) => (
           <Tag key={tag} label={tag} />

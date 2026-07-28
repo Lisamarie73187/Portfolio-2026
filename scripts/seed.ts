@@ -28,12 +28,12 @@ export const upsertProject = async (
 ) => {
   await client`
     insert into projects (
-      slug, title, tagline, description, year, role, tags,
+      slug, title, tagline, description, year, role, project_type, tags,
       cover_image, home_image, gallery, tech_stack, features,
       live_url, github_web_url, github_mobile_url, sort_order
     ) values (
       ${p.slug}, ${p.title}, ${p.tagline}, ${p.description}, ${p.year}, ${p.role},
-      ${JSON.stringify(p.tags)}, ${p.coverImage}, ${p.homeImage ?? null},
+      ${p.projectType ?? null}, ${JSON.stringify(p.tags)}, ${p.coverImage}, ${p.homeImage ?? null},
       ${JSON.stringify(p.gallery)}, ${JSON.stringify(p.techStack)},
       ${JSON.stringify(p.features)}, ${p.liveUrl ?? null},
       ${p.githubWebUrl ?? null}, ${p.githubMobileUrl ?? null},
@@ -45,6 +45,7 @@ export const upsertProject = async (
       description       = excluded.description,
       year              = excluded.year,
       role              = excluded.role,
+      project_type      = excluded.project_type,
       tags              = excluded.tags,
       cover_image       = excluded.cover_image,
       home_image        = excluded.home_image,
