@@ -14,7 +14,7 @@ export interface ProjectRow {
   title: string;
   tagline: string;
   description: string;
-  year: number;
+  year: string;
   role: string;
   project_type: string | null;
   tags: string[];

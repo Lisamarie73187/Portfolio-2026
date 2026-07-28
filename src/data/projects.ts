@@ -230,9 +230,9 @@ export const projects: Project[] = [
   tagline: 'Shipping ecommerce, curbside, and loyalty features to millions of pet parents on PetSmart\'s mobile app.',
   description:
     'Cross-platform mobile work on PetSmart\'s consumer app across iOS and Android. Part of a small team building the React Native ecommerce experience — browsing, cart, and checkout — plus ongoing maintenance and testing of the in-store Services app. Delivered curbside and DoorDash integrations during 2020 to support contactless shopping, added Apple Pay checkout, and wired up the Treats loyalty program so points earn and redeem inline.',
-  year: 2018,
+  year: '2018–2022',
   projectType: 'Work',
-  role: 'Software Engineer 2018-2022',
+  role: 'Software Engineer',
   tags: ['React Native', 'React', 'iOS', 'Swift', 'Kotlin', 'Redux'],
   homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/mobileAppThumbnail.png',
   coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/mobileAppThumbnail.png',

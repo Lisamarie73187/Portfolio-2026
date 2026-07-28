@@ -17,7 +17,8 @@ export interface Project {
   title: string;
   tagline: string;
   description: string;
-  year: number;
+  /** A single year (2026) or a range string ("2018–2022"). */
+  year: number | string;
   role: string;
   /** Optional category label, e.g. "Personal Project", "Client Work". */
   projectType?: string;

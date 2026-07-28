@@ -9,7 +9,7 @@ create table if not exists projects (
   title       text not null,
   tagline     text not null,
   description text not null,
-  year         integer not null,
+  year         text not null,
   role         text not null,
   project_type text,
   tags         jsonb not null default '[]'::jsonb,
