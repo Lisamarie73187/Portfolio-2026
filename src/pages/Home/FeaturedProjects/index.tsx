@@ -1,6 +1,5 @@
 import { ProjectCard } from '@/components/ProjectCard';
 import { ScrollReveal } from '@/components/ScrollReveal';
-import { Button } from '@/components/Button';
 import { useProjects } from '@/hooks/useProjects';
 
 export const FeaturedProjects = () => {
@@ -25,11 +24,6 @@ export const FeaturedProjects = () => {
               <ProjectCard project={project} featured />
             </ScrollReveal>
           ))}
-        </div>
-        <div className="mt-10 text-center">
-          <Button to="/projects" variant="outline">
-            See More Projects
-          </Button>
         </div>
       </div>
     </section>
