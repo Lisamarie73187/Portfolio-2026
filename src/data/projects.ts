@@ -2,6 +2,71 @@ import type { Project } from '@/types';
 
 export const projects: Project[] = [
   {
+    slug: 'wanderlist',
+    title: 'WanderList',
+    tagline: 'AI-assisted trip planning with a live map, built for real travel, not toy demos.',
+    description:
+      'A full-stack travel itinerary app for planning multi-day trips: drag-and-drop scheduling, a live Mapbox view with driving routes, shared/collaborative trips, budget splitting, and an AI-powered discovery panel that suggests real places using Google Places data, ranked and explained by an LLM.',
+    year: 2026,
+    role: 'Solo developer',
+    projectType: 'Personal Project',
+    tags: ['React', 'TypeScript', 'Vite', 'Supabase', 'Mapbox', 'AI SDK'],
+    homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
+    coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
+    gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/wanderlistFeatureOne.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/WanderlistTwo.png'],
+    techStack: [
+      {
+        name: 'React 19 + TypeScript (strict)',
+      },
+      {
+        name: 'Vite + Vercel serverless functions',
+      },
+      {
+        name: 'Supabase (Postgres + Auth)',
+      },
+      {
+        name: 'Mapbox GL JS',
+      },
+      {
+        name: 'Vercel AI SDK + AI Gateway',
+      },
+      {
+        name: 'Google Places API',
+      },
+      {
+        name: 'Drag-and-drop via @hello-pangea/dnd',
+      },
+    ],
+    features: [
+      {
+        title: 'AI-Powered Discovery',
+        description: 'An "Explore" panel with AI-generated category cards tailored to your specific destination (best attractions, local favorites, hikes) plus free-text search ("a quiet coffee shop near Day 2").',
+      },
+      {
+        title: 'Drag-and-Drop Itinerary',
+        description: 'Reorder places within a day or move them across days, with live driving time/distance estimates between stops and overnight hop distances shown between days.',
+      },
+      {
+        title: 'Live Collaborative Trips',
+        description: 'Invite collaborators by email, shared editing with optimistic updates, per-place comment threads, and a budget splitting view that settles up who owes whom.',
+      },
+      {
+        title: 'Interactive Map',
+        description: 'Day by day color coded pins, toggleable driving route overlays, and a floating AI suggestion layer with its own pins.',
+      },
+      {
+        title: 'Guest Mode',
+        description: 'Build a full itinerary without creating an account first; save it to a real account only when you\'re ready.',
+      },
+      {
+        title: 'Place Rankings',
+        description: 'Rate places you\'ve added to help a group converge on a final plan, visible to every collaborator.',
+      },
+    ],
+    liveUrl: 'https://www.wanderlist.dev',
+    githubWebUrl: 'https://github.com/Lisamarie73187/Winery-Itinerary-',
+  },
+  {
     slug: 'golden-hour',
     title: 'Golden Hour Happy Hour App',
     tagline: 'Find Your Happy Hour',
@@ -160,69 +225,59 @@ export const projects: Project[] = [
   liveUrl: 'https://example.com',
 },
 {
-  slug: 'wanderlist',
-  title: 'WanderList',
-  tagline: 'AI-assisted trip planning with a live map, built for real travel, not toy demos.',
+  slug: 'gyft',
+  title: 'Gyft',
+  tagline: 'Pregnancy tracking with a conversational AI chat and a Bluetooth-connected activity pendant.',
   description:
-    'A full-stack travel itinerary app for planning multi-day trips: drag-and-drop scheduling, a live Mapbox view with driving routes, shared/collaborative trips, budget splitting, and an AI-powered discovery panel that suggests real places using Google Places data, ranked and explained by an LLM.',
-  year: 2026,
-  role: 'Solo developer',
-  projectType: 'Personal Project',
-  tags: ['React', 'TypeScript', 'Vite', 'Supabase', 'Mapbox', 'AI SDK'],
-  homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
-  coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
-  gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/wanderlistFeatureOne.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/WanderlistTwo.png'],
+    'A pregnancy-tracking app pairing nutrition and wearable fitness data with a Bluetooth-connected pendant that encouraged daily activity, plus a Dialogflow-powered chat interface for logging data by text. Built from scratch with a four-person team and shipped to the App Store; no longer available.',
+  year: '2018å',
+  projectType: 'Work',
+  role: 'Software Engineer',
+  tags: ['React Native', 'TypeScript', 'MobX', 'Node.js'],
+  homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/Gyft+thumn.png',
+  coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/Gyft+thumn.png',
+  gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/GyftFetaures.png','http://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/GyftChat.png'],
   techStack: [
     {
-      name: 'React 19 + TypeScript (strict)',
+      name: 'React Native',
     },
     {
-      name: 'Vite + Vercel serverless functions',
+      name: 'TypeScript',
     },
     {
-      name: 'Supabase (Postgres + Auth)',
+      name: 'MobX',
     },
     {
-      name: 'Mapbox GL JS',
+      name: 'Node.js',
     },
     {
-      name: 'Vercel AI SDK + AI Gateway',
+      name: 'Google Dialogflow',
     },
     {
-      name: 'Google Places API',
+      name: 'Photoshop',
     },
     {
-      name: 'Drag-and-drop via @hello-pangea/dnd',
+      name: 'Illustrator',
     },
   ],
   features: [
     {
-      title: 'AI-Powered Discovery',
-      description: 'An "Explore" panel with AI-generated category cards tailored to your specific destination (best attractions, local favorites, hikes) plus free-text search ("a quiet coffee shop near Day 2").',
+      title: 'Conversational Interface',
+      description: "Used Google's Dialogflow to let users track pregnancy and health data naturally through text chat.",
     },
     {
-      title: 'Drag-and-Drop Itinerary',
-      description: 'Reorder places within a day or move them across days, with live driving time/distance estimates between stops and overnight hop distances shown between days.',
+      title: 'Nutrition Tracking',
+      description: 'Enabled easy logging of meals, water intake, and pregnancy cravings, and highlighted the essential nutrients needed during pregnancy.',
     },
     {
-      title: 'Live Collaborative Trips',
-      description: 'Invite collaborators by email, shared editing with optimistic updates, per-place comment threads, and a budget splitting view that settles up who owes whom.',
+      title: 'Activity Monitoring',
+      description: 'Synthesized data from a Bluetooth-connected pendant and wearable fitness trackers to monitor daily physical movement and encourage staying active.',
     },
     {
-      title: 'Interactive Map',
-      description: 'Day by day color coded pins, toggleable driving route overlays, and a floating AI suggestion layer with its own pins.',
-    },
-    {
-      title: 'Guest Mode',
-      description: 'Build a full itinerary without creating an account first; save it to a real account only when you\'re ready.',
-    },
-    {
-      title: 'Place Rankings',
-      description: 'Rate places you\'ve added to help a group converge on a final plan, visible to every collaborator.',
+      title: 'Location Services',
+      description: 'Helped users find healthy, nearby restaurant options that fit their nutritional needs.',
     },
   ],
-  liveUrl: 'https://www.wanderlist.dev',
-  githubWebUrl: 'https://github.com/Lisamarie73187/Winery-Itinerary-',
 },
 {
   slug: 'petsmart',

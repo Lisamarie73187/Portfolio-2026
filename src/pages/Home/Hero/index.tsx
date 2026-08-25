@@ -20,7 +20,7 @@ export const Hero = () => (
         transition={{ duration: 0.5, delay: 0.2 }}
         className="mt-4 max-w-3xl font-display text-xl font-semibold leading-snug tracking-tight text-ink sm:text-2xl"
       >
-I combine technical problem-solving with thoughtful design to create clear, intuitive, and user-friendly digital experiences.
+I combine technical problem solving with thoughtful design to create clear, intuitive, and user friendly digital experiences.
 </motion.h1>
 
       <motion.ul
