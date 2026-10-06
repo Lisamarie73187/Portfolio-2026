@@ -230,7 +230,7 @@ export const projects: Project[] = [
   tagline: 'Pregnancy tracking with a conversational AI chat and a Bluetooth-connected activity pendant.',
   description:
     'A pregnancy-tracking app pairing nutrition and wearable fitness data with a Bluetooth-connected pendant that encouraged daily activity, plus a Dialogflow-powered chat interface for logging data by text. Built from scratch with a four-person team and shipped to the App Store; no longer available.',
-  year: '2018å',
+  year: '2018',
   projectType: 'Work',
   role: 'Software Engineer',
   tags: ['React Native', 'TypeScript', 'MobX', 'Node.js'],

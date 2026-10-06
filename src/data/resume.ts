@@ -72,7 +72,7 @@ export const resume: ResumeData = {
     {
       school: 'Dev Mountain',
       credential: 'Full Stack Developer',
-      period: '2018 — 2019',
+      period: '2017 — 2018',
     },
   ],
   pdfUrl: '/resume.pdf',
