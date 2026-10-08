@@ -40,7 +40,7 @@ export const projects: Project[] = [
     features: [
       {
         title: 'AI-Powered Discovery',
-        description: 'An "Explore" panel with AI-generated category cards tailored to your specific destination (best attractions, local favorites, hikes) plus free-text search ("a quiet coffee shop near Day 2").',
+        description: 'An "Explore" panel with AI-generated category cards tailored to your specific destination (best attractions, local favorites, hikes) plus free-text search ("a quiet coffee shop near Day 2"). Built using generateObject with Zod-validated structured output, routed through Vercel AI Gateway to Claude, and grounded in Google Places results to prevent hallucinated recommendations.',
       },
       {
         title: 'Drag-and-Drop Itinerary',
