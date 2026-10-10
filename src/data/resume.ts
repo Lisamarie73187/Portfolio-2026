@@ -11,11 +11,11 @@ export const resume: ResumeData = {
       period: 'January 2025 — Present',
       location: 'Remote',
       highlights: [
-        'Build end-to-end features across AcreConnect and an agricultural drone operations platform using React, TypeScript, Kotlin, and PostgreSQL.',
-        'Expanded beyond a frontend specialization into backend development, contributing to Kotlin services, PostgreSQL data models, APIs, and integration tests.',
-        'Lead, coordinate, and facilitate engineering meetings to improve team alignment, clarify decisions, and ensure clear ownership of next steps.',
-        'Drive feature planning for select initiatives, working with product and engineering to clarify requirements, define scope, and write actionable Jira stories.',
-        'Collaborate on building AI-assisted engineering workflows including a tool that converts PRDs into structured Jira epics and stories, reducing ticket-writing time and planning.',
+        'Own the design and development of features across AcreConnect and an agricultural drone operations platform, translating complex workflows into intuitive interfaces using React and TypeScript.',
+        'Lead features from requirements through UX/UI design, frontend implementation, backend integration, testing, and production delivery.',
+        'Collaborate on Kotlin services, PostgreSQL data models, and APIs to deliver cohesive, end-to-end product experiences.',
+        'Drive feature planning by clarifying ambiguous requirements, defining scope, making technical tradeoffs, and translating product needs into actionable engineering stories.',
+        'Develop AI-assisted engineering workflows using Claude Code and Paperclip.io to accelerate planning, implementation, and testing while maintaining code quality.',
       ],
     },
     {
@@ -35,10 +35,10 @@ export const resume: ResumeData = {
       period: 'December 2018 — July 2022',
       location: 'Phoenix, Arizona',
       highlights: [
-        "Built and launched the PetSmart mobile e-commerce app as part of a 3-person React Native team, integrating with iOS, and Android.",
-        "Drove the creation of a design system with reusable UI components and documentation that improved consistency and development speed.",
-        "Mentored engineers through the team's formal mentorship program.",
-        "Recognized with the team's MVP Award for versatility across web, React Native, and native mobile development.",
+        "Drove the development of a reusable UI component library and design system, establishing consistent interface patterns and improving development efficiency.",
+        "Built and launched PetSmart's iOS and Android e-commerce application as part of a three-person React Native engineering team.",
+        "Implemented customer-facing features including Apple Pay, curbside pickup, delivery integrations, and loyalty experiences.",
+        "Mentored engineers through the formal mentorship program and received the team's MVP Award for versatility across web and mobile engineering.",
       ],
     },
     {
@@ -47,20 +47,26 @@ export const resume: ResumeData = {
       period: 'April 2018 — November 2018',
       location: 'Phoenix, Arizona',
       highlights: [
-        'Designed and built a mobile nutrition and pregnancy tracking app in React Native from idea to production with a 5-person startup team, owning UX/UI design.',
+        'Owned UX/UI design and React Native development for a mobile nutrition and pregnancy tracking application, taking the product from concept to production on a five-person startup team.',
       ],
     },
   ],
   skills: [
-    { label: 'Languages', skills: ['TypeScript', 'JavaScript', 'HTML', 'CSS'] },
     {
       label: 'Frontend',
-      skills: ['React', 'React Native', 'Next.js', 'Redux', 'Tailwind CSS', 'Sass'],
+      skills: ['React', 'React Native', 'TypeScript', 'Redux', 'Tailwind CSS', 'Sass', 'Responsive UI'],
     },
-    { label: 'Backend & data', skills: ['Node.js', 'Express', 'Kotlin', 'PostgreSQL'] },
     {
-      label: 'Tooling',
-      skills: ['Git', 'GitHub Actions', 'Claude', 'Cursor', 'Paperclip.io'],
+      label: 'Backend and APIs',
+      skills: ['Node.js', 'Express', 'Kotlin', 'REST', 'PostgreSQL', 'SQL', 'WebSockets'],
+    },
+    {
+      label: 'Design',
+      skills: ['UX/UI Design', 'Figma', 'Design Systems', 'Reusable Components', 'UI Prototyping'],
+    },
+    {
+      label: 'AI tooling',
+      skills: ['Claude', 'Claude Code', 'Cursor', 'Paperclip.io'],
     },
   ],
   education: [
@@ -72,7 +78,13 @@ export const resume: ResumeData = {
     {
       school: 'Dev Mountain',
       credential: 'Full Stack Developer',
-      period: '2018 — 2019',
+      period: '2017 — 2018',
+    },
+  ],
+  volunteer: [
+    {
+      organization: 'High Desert Volleyball Association',
+      role: 'Social Media, Web and Marketing Committee Chair',
     },
   ],
   pdfUrl: '/resume.pdf',

@@ -64,6 +64,19 @@ export const Resume = () => (
           </div>
         ))}
       </div>
+
+      {resume.volunteer && resume.volunteer.length > 0 && (
+        <div className="mt-12">
+          <h3 className="mb-4 font-display text-xl font-bold text-ink">Volunteer</h3>
+          {resume.volunteer.map((entry) => (
+            <div key={entry.organization} className="flex flex-wrap items-baseline justify-between gap-2">
+              <p className="font-medium text-ink">
+                {entry.role} · {entry.organization}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   </PageTransition>
 );

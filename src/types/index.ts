@@ -58,11 +58,17 @@ export interface EducationEntry {
   period: string;
 }
 
+export interface VolunteerEntry {
+  organization: string;
+  role: string;
+}
+
 export interface ResumeData {
   summary: string;
   experience: ExperienceEntry[];
   skills: SkillGroup[];
   education: EducationEntry[];
+  volunteer?: VolunteerEntry[];
   pdfUrl: string;
 }
 
