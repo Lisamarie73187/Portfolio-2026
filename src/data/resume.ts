@@ -54,7 +54,7 @@ export const resume: ResumeData = {
   skills: [
     {
       label: 'Frontend',
-      skills: ['React', 'React Native', 'TypeScript', 'Redux', 'Tailwind CSS', 'Sass', 'Responsive UI'],
+      skills: ['React', 'React Native', 'TypeScript', 'Redux', 'Next.js', 'Tailwind CSS', 'Sass', 'Responsive UI'],
     },
     {
       label: 'Backend and APIs',
