@@ -26,11 +26,17 @@ const icons: Record<string, ReactNode> = {
   ),
 };
 
+/** Matches a social link's label to an icon by its leading brand name (e.g. "GitHub (Work)" → GitHub icon). */
+const iconFor = (label: string): ReactNode => {
+  const brand = Object.keys(icons).find((key) => label.startsWith(key));
+  return brand ? icons[brand] : <span className="text-sm font-medium">{label}</span>;
+};
+
 /** Row of social icon links, sourced from `src/data/social.ts`. */
 export const SocialLinks = ({ className = '' }: SocialLinksProps) => (
   <ul className={`flex items-center gap-3 ${className}`}>
     {socialLinks.map((social) => (
-      <li key={social.label}>
+      <li key={social.href}>
         <a
           href={social.href}
           target={social.href.startsWith('mailto:') ? undefined : '_blank'}
@@ -38,7 +44,7 @@ export const SocialLinks = ({ className = '' }: SocialLinksProps) => (
           aria-label={social.label}
           className="grid h-10 w-10 place-items-center rounded-full border border-ink/10 bg-surface text-ink shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          {icons[social.label] ?? <span className="text-sm font-medium">{social.label}</span>}
+          {iconFor(social.label)}
         </a>
       </li>
     ))}
