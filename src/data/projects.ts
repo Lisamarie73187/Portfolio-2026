@@ -346,5 +346,71 @@ export const projects: Project[] = [
   ],
   liveUrl: 'https://www.petsmart.com',
   githubWebUrl: '',
+},
+{
+  slug: 'meal-prep',
+  title: 'Meal Prep Planner',
+  tagline: 'Pick recipes, set nutrition targets, and get a grocery list.',
+  description:
+    'A meal-prep planner that turns your nutrition goals into a weekly plan. Set calorie and macro targets, choose recipes for each meal, and get a combined grocery list. Portions can be adjusted automatically to hit your numbers. Anyone can plan without an account, and an account saves the plan, your own recipes, and your preferences.',
+  year: 2026,
+  role: 'Solo Designer & Developer',
+  projectType: 'Personal Project',
+  tags: ['React', 'TypeScript', 'Vite', 'Supabase', 'Anthropic API'],
+  homeImage: '',
+  coverImage: '',
+  gallery: [],
+  techStack: [
+    { name: 'React 19 + TypeScript' },
+    { name: 'Vite + React Router' },
+    { name: 'Supabase (Postgres, Auth, Storage, Row Level Security)' },
+    { name: 'Supabase Edge Functions' },
+    { name: 'Anthropic API (Claude)' },
+    { name: 'Vitest' },
+    { name: 'Vercel' },
+  ],
+  features: [
+    {
+      title: 'Nutrition Targets',
+      description:
+        'Set calories, protein, carbs and fat for each meal. The numbers stay linked (4/4/9 calories per gram), so changing one updates the others.',
+    },
+    {
+      title: 'Smart Recipe Suggestions',
+      description:
+        'Each meal starts with six ranked options based on your targets, diet, dislikes and what you already have. "Browse all recipes" opens the full list on the same page.',
+    },
+    {
+      title: 'Auto-Adjusted Portions',
+      description:
+        'Recipes can be scaled to land as close as possible to your macro targets, with the closest match flagged when a recipe can\'t hit all four.',
+    },
+    {
+      title: 'Diet Filters',
+      description:
+        'Vegetarian, vegan, pescatarian, dairy-free and gluten-free filters, plus ingredients to avoid, applied as hard filters on every suggestion.',
+    },
+    {
+      title: 'Grocery List',
+      description:
+        'Combines every ingredient across your recipes and portions into one list, converted into sensible units.',
+    },
+    {
+      title: 'Plan Without an Account',
+      description:
+        'Signed-out visitors can build a full plan that lives in the browser. An account is only needed to save it.',
+    },
+    {
+      title: 'AI Recipe Parser',
+      description:
+        'A Supabase Edge Function uses Claude to turn a recipe into structured ingredients, with per-person and daily limits on AI use.',
+    },
+    {
+      title: 'Your Own Recipes',
+      description:
+        'Shared recommended recipes can only be changed by admins. Editing one gives you your own copy, and you can hide recipes you never want to see again.',
+    },
+  ],
+  githubWebUrl: 'https://github.com/Lisamarie73187/Meal-prep-planner',
 }
 ];
