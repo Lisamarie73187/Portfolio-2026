@@ -67,6 +67,84 @@ export const projects: Project[] = [
     githubWebUrl: 'https://github.com/Lisamarie73187/Winery-Itinerary-',
   },
   {
+  slug: 'open-mind-chat',
+  title: 'Open Mind Chat',
+  tagline: 'A supportive space to reflect, chat, and check in with yourself.',
+  description:
+    'A mental wellness platform with a React Native mobile app, web chat bot, and a Next.js web companion that serves as its backend. Users talk through good and bad days with an AI companion ("AMI"), check in on their mood daily, and keep a private journal, wrapped in a warm, calming, non-judgmental design.',
+  year: 2024,
+  role: 'Solo Designer & Developer',
+  projectType: 'Personal Project',
+  tags: ['React Native', 'React','TypeScript', 'Next.js', 'OpenAI'],
+  coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/PSMainImage.png',
+  gallery: ['https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/charsupport.png', 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/moodtrackingJournal.png'],
+  techStack: [
+    {
+      name: 'React Native',
+    },
+     {
+      name: 'React 19 + TypeScript',
+    },
+    {
+      name: 'React Navigation',
+    },
+    {
+      name: 'React Native Reanimated',
+    },
+    {
+      name: 'Next.js',
+    },
+    {
+      name: 'OpenAI API',
+    },
+    {
+      name: 'MongoDB',
+    },
+    {
+      name: 'Firebase Auth',
+    },
+    {
+      name: 'React Query',
+    },
+    {
+      name: 'Tailwind CSS',
+    },
+  ],
+  features: [
+    {
+      title: 'AI Companion Chat',
+      description:
+        'Talk through good and bad days with "AMI," an AI friend that offers supportive, conversational mental-health check-ins.',
+    },
+    {
+      title: 'Animated, Human Chat Experience',
+      description:
+        'Animated message bubbles and a typing indicator with an avatar make conversations feel warm and responsive.',
+    },
+    {
+      title: 'Daily Mood Check-Ins',
+      description:
+        'Quick emotion buttons — Happy, Sad, Angry, Anxious — let users log how they feel each day from a personalized home space.',
+    },
+    {
+      title: 'Private Journaling',
+      description:
+        'A simple space to write and revisit personal entries to document thoughts and track progress over time.',
+    },
+    {
+      title: 'Companion Web App & Backend',
+      description:
+        'A Next.js web app that mirrors the chat experience in the browser and serves as the shared backend — exposing chat, user, and OpenAI endpoints backed by MongoDB and Firebase Auth.',
+    },
+    {
+      title: 'Calming, Friendly Design',
+      description:
+        'Soft backgrounds, rounded cards, and a gentle color palette create a safe, non-judgmental feel.',
+    },
+  ],
+  liveUrl: 'https://example.com',
+},
+{
     slug: 'golden-hour',
     title: 'Golden Hour Happy Hour App',
     tagline: 'Find Your Happy Hour',
@@ -146,84 +224,6 @@ export const projects: Project[] = [
     liveUrl: 'https://example.com',
     githubWebUrl: 'https://github.com',
   },
-  {
-  slug: 'open-mind-chat',
-  title: 'Open Mind Chat',
-  tagline: 'A supportive space to reflect, chat, and check in with yourself.',
-  description:
-    'A mental wellness platform with a React Native mobile app, web chat bot, and a Next.js web companion that serves as its backend. Users talk through good and bad days with an AI companion ("AMI"), check in on their mood daily, and keep a private journal, wrapped in a warm, calming, non-judgmental design.',
-  year: 2024,
-  role: 'Solo Designer & Developer',
-  projectType: 'Personal Project',
-  tags: ['React Native', 'React','TypeScript', 'Next.js', 'OpenAI'],
-  coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/PSMainImage.png',
-  gallery: ['https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/charsupport.png', 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/moodtrackingJournal.png'],
-  techStack: [
-    {
-      name: 'React Native',
-    },
-     {
-      name: 'React 19 + TypeScript',
-    },
-    {
-      name: 'React Navigation',
-    },
-    {
-      name: 'React Native Reanimated',
-    },
-    {
-      name: 'Next.js',
-    },
-    {
-      name: 'OpenAI API',
-    },
-    {
-      name: 'MongoDB',
-    },
-    {
-      name: 'Firebase Auth',
-    },
-    {
-      name: 'React Query',
-    },
-    {
-      name: 'Tailwind CSS',
-    },
-  ],
-  features: [
-    {
-      title: 'AI Companion Chat',
-      description:
-        'Talk through good and bad days with "AMI," an AI friend that offers supportive, conversational mental-health check-ins.',
-    },
-    {
-      title: 'Animated, Human Chat Experience',
-      description:
-        'Animated message bubbles and a typing indicator with an avatar make conversations feel warm and responsive.',
-    },
-    {
-      title: 'Daily Mood Check-Ins',
-      description:
-        'Quick emotion buttons — Happy, Sad, Angry, Anxious — let users log how they feel each day from a personalized home space.',
-    },
-    {
-      title: 'Private Journaling',
-      description:
-        'A simple space to write and revisit personal entries to document thoughts and track progress over time.',
-    },
-    {
-      title: 'Companion Web App & Backend',
-      description:
-        'A Next.js web app that mirrors the chat experience in the browser and serves as the shared backend — exposing chat, user, and OpenAI endpoints backed by MongoDB and Firebase Auth.',
-    },
-    {
-      title: 'Calming, Friendly Design',
-      description:
-        'Soft backgrounds, rounded cards, and a gentle color palette create a safe, non-judgmental feel.',
-    },
-  ],
-  liveUrl: 'https://example.com',
-},
 {
   slug: 'gyft',
   title: 'Gyft',
@@ -357,9 +357,13 @@ export const projects: Project[] = [
   role: 'Solo Designer & Developer',
   projectType: 'Personal Project',
   tags: ['React', 'TypeScript', 'Vite', 'Supabase', 'Anthropic API'],
-  homeImage: '',
-  coverImage: '',
-  gallery: [],
+  homeImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/meal-prep/MealPlannerOne.png',
+  coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/meal-prep/MealPlannerOne.png',
+  gallery: [
+    'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/meal-prep/MealPlannerTwo.png',
+    'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/meal-prep/MealPlannerThree.png',
+    'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/meal-prep/MealPlannerfour.png',
+  ],
   techStack: [
     { name: 'React 19 + TypeScript' },
     { name: 'Vite + React Router' },
