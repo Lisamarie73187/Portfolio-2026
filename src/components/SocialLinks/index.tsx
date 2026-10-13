@@ -36,7 +36,13 @@ const iconFor = (label: string): ReactNode => {
 export const SocialLinks = ({ className = '' }: SocialLinksProps) => (
   <ul className={`flex items-center gap-3 ${className}`}>
     {socialLinks.map((social) => (
-      <li key={social.href}>
+      <li key={social.href} className="group relative">
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-ink px-2 py-1 text-xs font-medium text-surface opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100"
+        >
+          {social.label}
+        </span>
         <a
           href={social.href}
           target={social.href.startsWith('mailto:') ? undefined : '_blank'}

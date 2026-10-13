@@ -11,9 +11,9 @@ export const projects: Project[] = [
     role: 'Solo developer',
     projectType: 'Personal Project',
     tags: ['React', 'TypeScript', 'Vite', 'Supabase', 'Mapbox', 'AI SDK'],
-    homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
-    coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/thumbnail.png',
-    gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/wanderlistFeatureOne.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/wanderlist/WanderlistTwo.png'],
+    homeImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/wanderlist/thumbnail.png',
+    coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/wanderlist/thumbnail.png',
+    gallery: ['https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/wanderlist/wanderlistFeatureOne.png', 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/wanderlist/WanderlistTwo.png'],
     techStack: [
       {
         name: 'React 19 + TypeScript (strict)',
@@ -76,9 +76,9 @@ export const projects: Project[] = [
     role: 'Solo Designer & Developer',
     projectType: 'Personal Project',
     tags: ['React Native', 'TypeScript', 'Supabase'],
-    homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Golden+Hour/thumbnailGoldenHour.png',
-    coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Golden+Hour/First.png',
-    gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Golden+Hour/secondImage.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Golden+Hour/ThirdImage.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Golden+Hour/darkmode.png'],
+    homeImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Golden%2BHour/thumbnailGoldenHour.png',
+    coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Golden%2BHour/First.png',
+    gallery: ['https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Golden%2BHour/secondImage.png', 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Golden%2BHour/ThirdImage.png', 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Golden%2BHour/darkmode.png'],
     techStack: [
     {
       name: 'React Native + TypeScript',
@@ -156,8 +156,8 @@ export const projects: Project[] = [
   role: 'Solo Designer & Developer',
   projectType: 'Personal Project',
   tags: ['React Native', 'React','TypeScript', 'Next.js', 'OpenAI'],
-  coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/OpenMindChat/PSMainImage.png',
-  gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/OpenMindChat/charsupport.png', 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/OpenMindChat/moodtrackingJournal.png'],
+  coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/PSMainImage.png',
+  gallery: ['https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/charsupport.png', 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/OpenMindChat/moodtrackingJournal.png'],
   techStack: [
     {
       name: 'React Native',
@@ -234,9 +234,9 @@ export const projects: Project[] = [
   projectType: 'Work',
   role: 'Software Engineer',
   tags: ['React Native', 'TypeScript', 'MobX', 'Node.js'],
-  homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/Gyft+thumn.png',
-  coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/Gyft+thumn.png',
-  gallery: ['https://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/GyftFetaures.png','http://lisaportfolio2024.s3.us-west-1.amazonaws.com/gyft/GyftChat.png'],
+  homeImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/gyft/Gyft%2Bthumn.png',
+  coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/gyft/Gyft%2Bthumn.png',
+  gallery: ['https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/gyft/GyftFetaures.png','https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/gyft/GyftChat.png'],
   techStack: [
     {
       name: 'React Native',
@@ -289,11 +289,11 @@ export const projects: Project[] = [
   projectType: 'Work',
   role: 'Software Engineer',
   tags: ['React Native', 'React', 'iOS', 'Swift', 'Kotlin', 'Redux'],
-  homeImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/mobileAppThumbnail.png',
-  coverImage: 'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/mobileAppThumbnail.png',
+  homeImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Petsmart/mobileAppThumbnail.png',
+  coverImage: 'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Petsmart/mobileAppThumbnail.png',
   gallery: [
-    'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/PetsmartOneApp.png',
-    'https://lisaportfolio2024.s3.us-west-1.amazonaws.com/Petsmart/petsmartservices.png',
+    'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Petsmart/PetsmartOneApp.png',
+    'https://5tnfvadd5pltgapk.public.blob.vercel-storage.com/Petsmart/petsmartservices.png',
   ],
   techStack: [
     {
